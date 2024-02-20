@@ -22,7 +22,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Env Variables
 
-To add the environment variables, create a .env.local file in the root of the project. 
+To add the environment variables, create a `.env.local` file in the root of the project. 
 
 The following values are needed:
 
