@@ -7,11 +7,12 @@ export default async function Home() {
   console.log(posts);
 
   posts.map((post: any) => {
-    const options = {
+    const options: Intl.DateTimeFormatOptions = {
       year: 'numeric',
       month: 'short',
       day: 'numeric',
     };
+
     post.dateFormatted = new Intl.DateTimeFormat('en-US', options).format(
       new Date(post.published_at)
     );
