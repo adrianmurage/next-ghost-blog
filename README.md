@@ -20,3 +20,4 @@ The following values are needed:
 
 1. `GHOST_CONTENT_API_KEY`
 2. `GHOST_API_URL` - this value should not have a trailing slash.
+3. `GHOST_SITE_TAG` - we assume that you're using Ghost CMS for multiple sites and this value helps you identify posts for this specific site. It can be found in the tag setting on your Ghost CMS dashboard. 
