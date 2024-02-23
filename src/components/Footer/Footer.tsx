@@ -19,9 +19,8 @@ function Footer() {
         </div>
         <div className="text-xl text-gray-700">
           <p>Hey, my name is Adrian!</p>
-          <p>
-            I am a web developer from Kenya, specialized in React and Node.js.
-            I'm actively looking for my next role.
+          <p>I am a web developer from Kenya, specialized in React and Node.js.
+            I'm actively looking for my next role. I'm open to both full-time and contract roles.
           </p>
         </div>
         <div className="mt-6">
