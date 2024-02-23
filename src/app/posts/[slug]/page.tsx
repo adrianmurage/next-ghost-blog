@@ -1,5 +1,6 @@
-import { getSinglePost } from '@/app/lib/posts';
+import { getPosts, getSinglePost } from '@/app/lib/posts';
 import type { Metadata, ResolvingMetadata } from 'next';
+
 
 type Props = {
   params: {
@@ -18,6 +19,15 @@ export async function generateMetadata(
   return {
     title: `${post.title} - Adrian Murage`,
   };
+}
+
+export async function generateStaticParams() {
+  const posts = await getPosts();
+  return posts.map((post: any) => ({
+    params: {
+      slug: post.slug,
+    },
+  }));
 }
 
 export default async function Page({ params }: { params: { slug: string } }) {
