@@ -29,6 +29,7 @@ export default async function Page() {
     <>
       <main className="mt-6">
         <div className="mx-auto prose prose-h2:mb-2.5 prose-a:underline-offset-4	prose-a:text-blue-500 ">
+          <h1>All Blog Posts</h1>
           {posts?.map((post: any) => (
             <Link
               href={`/posts/${post.slug}`}

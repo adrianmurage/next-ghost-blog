@@ -5,7 +5,7 @@ export default async function Page() {
     <>
       <main className="mt-6">
         <div className="mx-auto prose prose-h2:mb-2.5 prose-a:underline-offset-4	prose-a:text-blue-500">
-          <h1>My work in the Technical Writing space</h1>
+          <h1>Technical Writing</h1>
           <p className="">
             If you would like to discuss content for your business, please
             contact me at{' '}
@@ -82,7 +82,7 @@ export default async function Page() {
               </tr>
             </tbody>
           </table>
-          <h2>Articles that I edited, written by other authors.</h2>
+          <h2>Articles I have edited</h2>
           <p>
             I have edited quite a number of articles for the{' '}
             <Link
@@ -101,7 +101,7 @@ export default async function Page() {
               href="https://www.google.com/search?q=site:section.io+peer+review+contributions+by:+Adrian+murage&ei=0aw6ZJGYENeCkdUPxamg8A8&start=30&sa=N&ved=2ahUKEwjRxPD7hKz-AhVXQaQEHcUUCP44KBDy0wN6BAgGEAo&biw=1316&bih=636&dpr=1"
               target="_blank"
             >
-              this google query
+              this google query.
             </Link>
           </p>
           <table className="table table-condensed table-bordered">

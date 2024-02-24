@@ -9,7 +9,7 @@ export default async function Page() {
           <p>
             Giving talks for me is a cool way to fact check my knowledge about
             things. I love teaching in such environments, so from time to time I
-            prepare talks and give them.
+            prepare talks and give them:
           </p>
           <ul>
             <li>

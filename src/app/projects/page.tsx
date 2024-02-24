@@ -7,7 +7,7 @@ export default async function Page() {
         <div className="mx-auto prose prose-h2:mb-2.5 prose-a:underline-offset-4	prose-a:text-blue-500">
           <h1>Projects</h1>
           <p>
-            When I'm not working on a school or work projects, I'm working on my
+            When I'm not working on school or work projects, I'm working on my
             own projects. Here are some things I've made:
           </p>
           <div className="">

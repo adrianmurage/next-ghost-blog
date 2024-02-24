@@ -41,6 +41,7 @@ export default async function Page() {
       <main className="mt-6">
         <div className="mx-auto prose prose-a:underline-offset-4	prose-a:text-blue-500">
           <h1>About Me</h1>
+
           <header className="">
             <div className="flex gap-8 ">
               <Image
@@ -49,9 +50,20 @@ export default async function Page() {
                 width={108}
                 height={108}
                 placeholder="blur"
-                className="rounded-lg m-0"
+                className="rounded-lg m-0 object-cover"
               />
-              <h2 className="not-prose text-xl font-bold">Hi 👋🏾 I'm {name}</h2>
+              <div>
+                <h2 className="not-prose text-lg md:text-2xl font-bold ">
+                  Hi 👋🏾 I'm {name}
+                </h2>
+
+                <p className=" md:text-xl">
+                  <span className="block pt-2">
+                    I am a web developer from Kenya, specialized in React and
+                    Node.js.
+                  </span>
+                </p>
+              </div>
             </div>
             <div className="">
               <p>
@@ -60,8 +72,8 @@ export default async function Page() {
                 ✨final year✨.
               </p>
               <p>
-                Outside of these hours, I am a React (Next.js) / Node.js
-                developer and a Technical writer (how I pay my rent 🚀).
+                Outside of normal business hours, I am a React (Next.js) /
+                Node.js developer and a Technical writer (pays my rent 🚀).
               </p>
               <p>
                 I run{' '}
@@ -95,15 +107,16 @@ export default async function Page() {
                 htmlFor="default-checkbox"
                 className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
-                Reducing friction in my writing process by building a{' '}
+                {' '}
+                Cut the steps to publish my blogposts from 4 to 1 with{' '}
                 <Link
                   className="underline-offset-4	text-blue-500"
                   target="_blank"
-                  href="mailto:adrianmurage21@gmail.com?subject=Hi%20Adrian%20%F0%9F%91%8B"
+                  href="https://github.com/adrianmurage/next-ghost-blog"
                 >
-                  blog template
+                  Ghost CMS + Next.js
                 </Link>{' '}
-                that uses GhostCMS.
+                .
               </label>
             </div>
             <div className="flex items-center mb-4">
@@ -141,7 +154,8 @@ export default async function Page() {
                 htmlFor="checked-checkbox"
                 className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
-                Building an email outreach tool as I gear up to look for work.
+                Building a tool to help me with email outreach as I gear up to
+                look for a new job.
               </label>
             </div>
             <div className="flex items-center mb-4">
