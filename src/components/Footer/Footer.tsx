@@ -13,7 +13,7 @@ function Footer() {
             width={64}
             height={64}
             placeholder="blur"
-            className="rounded-lg object-scale-down absolute -top-8"
+            className="rounded-lg absolute -top-8"
           />
         </div>
         <div className="text-xl text-gray-700">

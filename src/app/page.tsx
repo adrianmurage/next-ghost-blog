@@ -44,12 +44,12 @@ export default async function Page() {
           <header className="">
             <div className="flex gap-8 ">
               <Image
-                priority
                 src={profilePic}
-                className="rounded-lg m-0"
-                height={108}
+                alt="Adrian Murage"
                 width={108}
-                alt=""
+                height={108}
+                placeholder="blur"
+                className="rounded-lg m-0"
               />
               <h2 className="not-prose text-xl font-bold">Hi 👋🏾 I'm {name}</h2>
             </div>
