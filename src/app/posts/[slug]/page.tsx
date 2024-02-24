@@ -1,7 +1,6 @@
 import { getPosts, getSinglePost } from '@/app/lib/posts';
 import type { Metadata, ResolvingMetadata } from 'next';
 
-
 type Props = {
   params: {
     slug: string;
@@ -35,7 +34,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   return (
     <main className="mt-6">
-      <article className="prose md:prose-lg  mx-auto">
+      <article className="prose md:prose-lg  mx-auto prose-a:underline-offset-4	prose-a:text-blue-500">
         <h1>{post.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>

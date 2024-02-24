@@ -1,6 +1,6 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getPosts } from '../lib/posts';
-import type { Metadata } from 'next';
 
 export const revalidate = 3600; // revalidate at most every hour
 
@@ -10,9 +10,8 @@ export const metadata: Metadata = {
     'Adrian Murage writes about web development, React, Node.js, and his escapades building projects.',
 };
 
-export default async function Home() {
+export default async function Page() {
   const posts = await getPosts();
-  console.log(posts);
 
   posts.map((post: any) => {
     const options: Intl.DateTimeFormatOptions = {
@@ -29,7 +28,7 @@ export default async function Home() {
   return (
     <>
       <main className="mt-6">
-        <div className="mx-auto prose prose-h2:mb-2.5 ">
+        <div className="mx-auto prose prose-h2:mb-2.5 prose-a:underline-offset-4	prose-a:text-blue-500 ">
           {posts?.map((post: any) => (
             <Link
               href={`/posts/${post.slug}`}

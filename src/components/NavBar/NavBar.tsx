@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { RxCross1, RxHamburgerMenu } from 'react-icons/rx';
-import GlowButton from '../GlowButton';
 
 function Links() {
   return (
@@ -20,11 +19,29 @@ function Links() {
       >
         Blog
       </Link>
+      <Link
+        className="mt-2 block md:mt-0 hover:text-slate-900"
+        href="/talks"
+      >
+        Talks
+      </Link>
+      <Link
+        className="mt-2 block md:mt-0 hover:text-slate-900"
+        href="/projects"
+      >
+        Projects
+      </Link>
+      <Link
+        className="mt-2 block md:mt-0 hover:text-slate-900"
+        href="/writing"
+      >
+        Technical Writing
+      </Link>
       <div className="hidden md:block">
-        <GlowButton
+        {/* <GlowButton
           buttonText="Hire me"
           buttonLink="mailto:adrianmurage21@gmail.com?subject=Hey%20Adrian%2C%20I'd%20love%20to%20work%20with%20you.%20Let's%20talk%3F&body=Hey%20Adrian%2C%20%0A%0AIt's%20%3Cyour%20name%3E%20from%20%3Cyour%20company%3E%20and%20I'd%20like%20to%20work%20with%20you%20on%20%3Cproject%20name%3E.%0A"
-        />
+        /> */}
       </div>
     </div>
   );
@@ -42,10 +59,10 @@ function NavBar() {
           </Link>
         </div>
         <div className="flex items-center gap-6 md:hidden">
-          <GlowButton
+          {/* <GlowButton
             buttonText="Hire me"
             buttonLink="mailto:adrianmurage21@gmail.com?subject=Hey%20Adrian%2C%20I'd%20love%20to%20work%20with%20you.%20Let's%20talk%3F&body=Hey%20Adrian%2C%20%0A%0AIt's%20%3Cyour%20name%3E%20from%20%3Cyour%20company%3E%20and%20I'd%20like%20to%20work%20with%20you%20on%20%3Cproject%20name%3E.%0A"
-          />
+          /> */}
           <button
             type="button"
             onClick={() => setIsOpen(!isOpen)}
